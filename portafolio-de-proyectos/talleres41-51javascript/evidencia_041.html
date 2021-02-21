@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>meses</title>
+    <script lang="javascript" type="text/javascript">
+
+        var estacion = prompt('porfavor acontinuacion escriba un numero del 1 al 4 para saber la estacion.');
+        var rec = '';
+        num = parseInt(estacion);
+        switch (estacion) {
+            case '1':
+                rec = 'verano, momento de salir con poca ropa pero con mucho protector solar y disfrutar de un ambiente de tranquilidad y diversion.'
+                break;
+
+            case '2':
+                rec = 'primavera, es momento de salir a toma algo de sol, pero no olvides las gafas ni el protector solar'
+                break;
+
+            case '3':
+                rec = 'otoño, es momento de pisar hojas y tomas unas fotos, procurar el limpiar las caneletas y un saco para el frio.'
+                break;
+
+            case '4':
+                rec = 'invierno, momento de estar en casa y disfrutar de un buen chocolate, series y si sales , muy importante el usar abrigo y llevar a un amigo para hacer un muñeco de nieve y si no tienes amigos no te preocupes siempre puedes salir a explorar nunca va de mas.'
+                break;
+
+            default:
+                console.log('valor no reconocido, porfavor acutalice la pagina e ingrese un valor numerico entre el 1 y el 4, gracias');
+                break;
+
+        }
+        alert('la estacion es: ' + rec);
+    </script>
+</head>
+
+<body background="../../imagenes/estaciones.jpg">
+    <h1 style="text-transform: capitalize;">las estaciones</h1>
+    <h2 style="text-transform: capitalize;">
+        programa en JavaScript para indicar la estacion del año y una pequeña recomendacion de que hacer en esa
+        temporada
+    </h2>
+</body>
+
+</html>

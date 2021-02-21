@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ejercicio 045</title>
+    <script lang="javascript" type="text/javascript">
+        nota = prompt('ingresa una nota entre 1 y 10');
+        nota = parseInt(nota);
+        var valletras = '';
+        switch (nota) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+                valletras = 'no aprobado'
+                break;
+
+            case 5:
+                valletras = 'aprobado'
+                break;
+
+            case 6:
+            case 7:
+                valletras = 'bien'
+                break;
+
+            case 8:
+            case 9:
+                valletras = 'notable'
+                break;
+
+            case 10:
+                valletras = 'excelente'
+                break;
+
+            default:
+                alert('valor no valido');
+                break;
+        }
+        alert('el valor de la nota es:' + valletras);
+    </script>
+</head>
+
+<body>
+    <p>parrafo ejercicio 045</p>
+    <p>programa en javascript para devolver el valor equivalente en letras de una calificacion de 1 a 10</p>
+</body>
+
+</html>

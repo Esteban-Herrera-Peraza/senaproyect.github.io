@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>rengos de admision</title>
+    <script lang="javascript" type="text/javascript">
+        var entrada = prompt('porfavor, ingrese su edad actual.');
+        var ejer = '';
+        switch (true) {
+
+            case entrada >= 18 && entrada <= 26:
+                ejer = 'edad suficiente para ingresar a la primera linea del Ejercito Nacional de Colombia.'
+                break;
+
+            case entrada > 26 && entrada <= 45:
+                ejer = 'edad suficiente para ingresar a la segunda  linea del Ejercito Nacional de Colombia.'
+                break;
+
+
+            case entrada > 45 && entrada <= 50:
+                ejer = 'edad suficiente para ingresar a la tercera linea del Ejercito Nacional de Colombia.'
+                break;
+
+
+
+
+            default:
+                console.log('valor no valido o no coinciden con los limites para el ingreso a alguna del las tres lineas del Ejercito Nacional de Colombia');
+                break;
+        }
+        alert('resultado:' + ejer);
+    </script>
+</head>
+
+<body background="../../imagenes/rangos_de_admision.jpg">
+    <h2 style="text-transform: capitalize;">
+        programa en JavaScript para el ingreso a las lineas del ejercito Nacional de Colombia.
+    </h2>
+</body>
+
+</html>

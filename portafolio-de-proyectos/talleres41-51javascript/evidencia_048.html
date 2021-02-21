@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>datos numericos o caractér?</title>
+    <script lang="javascript" type="text/javascript">
+        var mensaje = prompt('porfavor ingrese una letra o un numero, gracias.');
+        var num = mensaje;
+        if (!(isNaN(num))) {
+            var valor = typeof (num);
+        } else {
+            var valor = typeof (mensaje);
+        }
+        switch (valor) {
+            case 'number':
+                result = 'el valor ingresado coresponde a un dato de tipo numerico'
+                break;
+
+            case 'string':
+                result = 'el valor ingresado corresponde a un tipo caracter'
+                break;
+
+            default:
+                console.log('la tecla presionada es:' + result);
+                break;
+        }
+        alert(result);
+    </script>
+</head>
+
+<body background="../../imagenes/datos_numericos_o_carcter.jpg">
+    <h2 style="text-transform: capitalize;color:darkviolet;">
+        programa en javascript para saber si el dato ingresado contiene numero o letra.
+    </h2>
+</body>
+
+</html>

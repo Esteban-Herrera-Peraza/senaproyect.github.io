@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>suministros</title>
+    <script lang="javascript" type="text/javascript">
+        //programa para ver si la cantidad de sumunistros es aceptable , critica o suficiente.
+        prov = prompt('porfavor ingrese la cantidad de suministros que posee actualmente, gracias.');
+        prov = parseInt(prov);
+        switch (prov) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+                res = 'critico, porfavor comprar mas suministros lo antes posible.'
+                break;
+
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+                res = 'aceptable'
+                break;
+
+            case 10:
+            case 11:
+            case 12:
+            case 13:
+            case 14:
+            case 15:
+            case 16:
+            case 17:
+            case 18:
+            case 19:
+            case 20:
+                res = 'suficiente, porfavor no compre mas en un buen tiempo, puesto que esta bien abastecido.'
+                break;
+
+
+            default:
+                alert('cantidad excesiva o no valido, porfavor actualizar pagina e ingresar los valores, gracias.')
+                break;
+        }
+        alert('su cantidad de suministros es:' + res);
+    </script>
+</head>
+
+<body background="../../imagenes/suministros.jpg">
+    <h2 style="text-transform: capitalize;color: orangered;">
+        programa en JavaScript para determinar si la cantidad de suministros que posee es critica, aceptable o
+        suficiente.
+    </h2>
+</body>
+
+</html>

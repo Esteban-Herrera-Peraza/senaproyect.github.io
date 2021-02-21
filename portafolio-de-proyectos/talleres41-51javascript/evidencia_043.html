@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ecuacion</title>
+    <script lang="javascript" type="text/javascript">
+        var ecuacion = prompt('porfavor, acontinuacion registre los siguientes signos +(para sumar), -(para restar), *(para multiplicar), /(para dividir) y asi en consecuente realizar la ecuacion, gracias.');
+        number1 = prompt('porfavor ingrese el primer numero');
+        number1 = parseInt(number1);
+        number2 = prompt('porfavor ingrese el segundo numero');
+        number2 = parseInt(number2);
+        number3 = prompt('porfavor ingrese el penultimo numero');
+        number3 = parseInt(number3);
+        number4 = prompt('porfavor ingrese el ultimo numero');
+        number4 = parseInt(number4);
+        var ecu = 0;
+        switch (ecuacion) {
+            case '+':
+                ecu = number1 + number2 + number3 + number4
+                break;
+
+            case '-':
+                ecu = number1 - number2 - number3 - number4
+                break;
+
+            case '*':
+                ecu = number1 * number2 * number3 * number4
+                break;
+
+            case '/':
+                ecu = number1 / number2 / number3 / number4
+                break;
+
+            default:
+                alert('valor no valido, solo puede ingresar numeros, porfavor acualize la pagina y vuelva a intentarlo, gracias :)')
+                break;
+        }alert('el resultado de la ecuacion es:' + ecu);
+    </script>
+
+</head>
+
+<body background="../../imagenes/ecuacion.jpg">
+    <h2 style="text-transform: capitalize;color: darkmagenta;">
+        programa en javascript para ingresar 4 valores y realizar una operacion las cuales son suma, resta,
+        multiplicacion, division.
+    </h2>
+</body>
+
+</html>
